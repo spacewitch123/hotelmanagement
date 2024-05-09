@@ -1,0 +1,250 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+ }
+ 
+ *::-webkit-scrollbar{
+    width: 10px;
+ }
+ 
+ *::-webkit-scrollbar-track{
+    background-color: transparent;
+ }
+ 
+ *::-webkit-scrollbar-thumb{
+    background-color: #57ADBF;
+ }
+
+
+ table, th, td {
+    border:1px solid black;
+  }
+
+
+.a{
+    color: green;
+}
+.req{
+    color: #57ADBF;
+}
+
+
+#form1{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+	min-height: 100vh;
+}
+
+
+.container1{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px 0px rgba(0,0,0,0.7);
+}
+.container1 .logo{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:100px;
+    transition: 0.3s;
+}
+.container1 .logo:hover{
+    box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.7);
+    width: 160px;
+    height: 160px;
+    border-radius:100px;
+}
+.container1 .booktitle{
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(32, 32, 32, 0.787);
+}
+.container1 .booktitle::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 40px;
+    border-radius: 8px;
+    background-color: #57ADBF;
+}
+.container1 .forma{
+    position: relative;
+    margin-top: 16px;
+    min-height: 510px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.container1 .forma .form{
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+.container1 form .form.second{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+}
+.container1 .forma .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 6px 0;
+    color: #333;
+}
+.container1 .forma .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.forma .fields .input-field{
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    margin: 10px 15px;
+}
+
+.forma .fields .input-fieldn{
+    display: flex;
+    width: 530px;
+    flex-direction: column;
+    margin: 10px 15px;
+    text-align: center;
+}
+form.secActive .form.second{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+form.secActive .form.first{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+}
+
+
+
+.input-field label{
+    font-size: 12px;
+    font-weight: 700;
+    color: #000000;
+
+}
+
+.input-fieldn label{
+    font-size: 12px;
+    font-weight: 700;
+    color: #000000;
+    text-align: left;
+
+}
+
+
+.input-fieldn input :focus,
+.input-fieldn select:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-fieldn select,
+.input-fieldn input[type="text"]{
+    color: #4e4e4ed8;
+}
+.input-fieldn input[type="date"]:valid{
+    color: #333;
+}
+
+.input-field input :focus,
+.input-field select:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-field select,
+.input-field input[type="date"]{
+    color: #4e4e4ed8;
+}
+.input-field input[type="text"]{
+    color: #4e4e4ed8;
+}
+.input-field input[type="number"]{
+    color: #4e4e4ed8;
+}
+.input-field input[type="email"]{
+    color: #4e4e4ed8;
+}
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+
+
+
+
+.input-fieldn input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-field input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+
+
+
+button{
+    margin-left: 725px;
+    margin-top: 100px;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #57ADBF;
+    color: white;
+    transition: 0.5s;
+}
+button:hover{
+    background-color:white;
+    color: #57ADBF;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+
+
+
+
+
